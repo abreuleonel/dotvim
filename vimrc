@@ -22,6 +22,9 @@ set cc=80
 " enable syntax highlighting
 syntax on
 
+call pathogen#infect()
+call pathogen#helptags()
+
 " auto detect the type of file that is being edited 
 filetype on
 " enable file type detection
@@ -170,3 +173,32 @@ endfunction
 
 " mapping for function above
 map <leader>bw :call Wipeout()<CR>
+
+" NerdTree
+map <leader>nt :NERDTreeToggle<CR>
+
+" JSON Format
+map <leader>jt <Esc>:%!json_xs -f json -t json-pretty<CR>
+
+" XML Format
+map <leader>xt <Esc>:1,$!xmllint --format -<CR>
+
+" Tab next
+nnoremap <C-w>k :tabnew %<CR>
+nnoremap <C-w>l :tabprevious<CR>
+nnoremap <C-w>h :tabnext<CR>
+
+" Remove file
+"nnoremap <C-D> :!rm %<CR>
+
+" CommandT TextMate style finder
+nnoremap <leader>t :CommandT<CR>
+
+" switch to last used buffer
+nnoremap <leader>l :e#<CR>
+
+" YankRing mapping
+nnoremap <leader>y :YRShow<CR>
+
+" TagList of functions
+map <leader>T :TlistToggle<CR>
