@@ -34,9 +34,6 @@
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = https://github.com/corntrace/bufexplorer.git
-[submodule "bundle/acp"]
-	path = bundle/acp
-	url = https://github.com/vimcn/acp.vim.git
 [submodule "bundle/endwise"]
 	path = bundle/endwise
 	url = https://github.com/vim-scripts/endwise.vim.git
@@ -58,3 +55,6 @@
 [submodule "bundle/yankring"]
 	path = bundle/yankring
 	url = https://github.com/chrismetcalf/vim-yankring.git
+[submodule "bundle/autocomplpop"]
+	path = bundle/autocomplpop
+	url = https://github.com/vim-scripts/AutoComplPop.git
