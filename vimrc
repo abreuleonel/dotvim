@@ -76,7 +76,17 @@ set directory=~/.vim/tmp " dir to keep all swap files
 set laststatus=2
 
 " Useful status information at bottom of screen
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{GitBranchInfoString()}\ %=%-16(\ %l,%c-%v\ %)%P
+"set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}\ %{exists('g:loaded_rvm')?rvm#statusline():''}\ %=%-16(\ %l,%c-%v\ %)%P
+"statusline setup
+set statusline=%f                                               "tail of the filename
+set statusline+=\ %r                                            " Opened type (read-only)
+set statusline+=\ %y                                            " File type (vim, php, ruby)
+set statusline+=\ %{fugitive#statusline()}                      " Git
+set statusline+=\ %{exists('g:loaded_rvm')?rvm#statusline():''} " RVM
+set statusline+=%=                                              "left/right separator
+set statusline+=%c,                                             "cursor column
+set statusline+=%l/%L                                           "cursor line/total lines
+set statusline+=\ %P                                            "percent through file
 
 " enhanced command line completion
 set wildmenu
