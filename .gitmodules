@@ -22,3 +22,39 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = https://github.com/vim-scripts/ack.vim.git
+[submodule "bundle/autotag"]
+	path = bundle/autotag
+	url = https://github.com/vim-scripts/AutoTag.git
+[submodule "bundle/bufexplorer"]
+	path = bundle/bufexplorer
+	url = https://github.com/corntrace/bufexplorer.git
+[submodule "bundle/acp"]
+	path = bundle/acp
+	url = https://github.com/vimcn/acp.vim.git
+[submodule "bundle/endwise"]
+	path = bundle/endwise
+	url = https://github.com/vim-scripts/endwise.vim.git
+[submodule "bundle/kwbdi"]
+	path = bundle/kwbdi
+	url = https://github.com/vim-scripts/kwbdi.vim.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule "bundle/ruby-matchit"]
+	path = bundle/ruby-matchit
+	url = https://github.com/vim-scripts/ruby-matchit.git
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "bundle/ruby-refactorings"]
+	path = bundle/ruby-refactorings
+	url = https://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "bundle/yankring"]
+	path = bundle/yankring
+	url = https://github.com/chrismetcalf/vim-yankring.git
