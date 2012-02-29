@@ -58,3 +58,6 @@
 [submodule "bundle/autocomplpop"]
 	path = bundle/autocomplpop
 	url = https://github.com/vim-scripts/AutoComplPop.git
+[submodule "bundle/sinatra"]
+	path = bundle/sinatra
+	url = https://github.com/hallison/vim-ruby-sinatra.git
