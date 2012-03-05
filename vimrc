@@ -16,8 +16,8 @@ set number
 " don't break wrapped lines on words
 set linebreak
 
-" highlight 80 columns
-set cc=80
+" highlight N columns
+set cc=100
 
 " enable syntax highlighting
 syntax on
@@ -78,15 +78,17 @@ set laststatus=2
 " Useful status information at bottom of screen
 "set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}\ %{exists('g:loaded_rvm')?rvm#statusline():''}\ %=%-16(\ %l,%c-%v\ %)%P
 "statusline setup
-set statusline=%f                                               "tail of the filename
+set statusline=%f                                               " tail of the filename
+set statusline+=\ [%{strlen(&fenc)?&fenc:'none'},               " file encoding
+set statusline+=\ %{&ff}]                                       " file format
 set statusline+=\ %r                                            " Opened type (read-only)
 set statusline+=\ %y                                            " File type (vim, php, ruby)
 set statusline+=\ %{fugitive#statusline()}                      " Git
 set statusline+=\ %{exists('g:loaded_rvm')?rvm#statusline():''} " RVM
-set statusline+=%=                                              "left/right separator
-set statusline+=%c,                                             "cursor column
-set statusline+=%l/%L                                           "cursor line/total lines
-set statusline+=\ %P                                            "percent through file
+set statusline+=%=                                              " left/right separator
+set statusline+=%c,                                             " cursor column
+set statusline+=%l/%L                                           " cursor line/total lines
+set statusline+=\ %P                                            " percent through file
 
 " enhanced command line completion
 set wildmenu
