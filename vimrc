@@ -16,8 +16,14 @@ set number
 " don't break wrapped lines on words
 set linebreak
 
+" set no word rap line
+set nowrap
+
 " highlight N columns
 set cc=100
+
+" show highlight columns on cursor
+set cursorcolumn
 
 " enable syntax highlighting
 syntax on
@@ -82,6 +88,7 @@ set statusline=%f                                               " tail of the fi
 set statusline+=\ [%{strlen(&fenc)?&fenc:'none'},               " file encoding
 set statusline+=\ %{&ff}]                                       " file format
 set statusline+=\ %r                                            " Opened type (read-only)
+set statusline+=\ %m                                            " Modify?
 set statusline+=\ %y                                            " File type (vim, php, ruby)
 set statusline+=\ %{fugitive#statusline()}                      " Git
 set statusline+=\ %{exists('g:loaded_rvm')?rvm#statusline():''} " RVM
