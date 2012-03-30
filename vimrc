@@ -20,7 +20,7 @@ set linebreak
 set nowrap
 
 " highlight N columns
-set cc=100
+set cc=120
 
 " show highlight columns on cursor
 set cursorcolumn

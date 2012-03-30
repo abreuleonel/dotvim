@@ -67,3 +67,6 @@
 [submodule "bundle/rspec"]
 	path = bundle/rspec
 	url = https://github.com/vim-scripts/Vim-Rspec.git
+[submodule "bundle/checksyntax"]
+	path = bundle/checksyntax
+	url = https://github.com/tomtom/checksyntax_vim.git
