@@ -221,3 +221,5 @@ nnoremap <leader>y :YRShow<CR>
 
 " TagList of functions
 map <leader>T :TlistToggle<CR>
+
+let g:debuggerPort = 9001

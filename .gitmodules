@@ -70,3 +70,9 @@
 [submodule "bundle/checksyntax"]
 	path = bundle/checksyntax
 	url = https://github.com/tomtom/checksyntax_vim.git
+[submodule "bundle/vim-xdebug"]
+	path = bundle/vim-xdebug
+	url = https://github.com/ludovicPelle/vim-xdebug.git
+[submodule "bundle/zencoding"]
+	path = bundle/zencoding
+	url = https://github.com/mattn/zencoding-vim.git
